@@ -44,6 +44,7 @@ body {
 .upper-menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 88px;
   padding: 18.59px 16px;
   border-bottom: 1px solid #D9FFF5;
@@ -80,6 +81,18 @@ body {
 
 .round-button--icon--burger {
   background-image: url('../img/interface/burger-icon.svg');
+}
+
+.round-button--icon--burger::after {
+  position: relative;
+  left: 170px;
+  display: block;
+  content: "";
+  width: 2px;
+  height: 32px;
+  background-image: url('../img/decoration/divider.svg');
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .round-button--icon--check-status {
@@ -153,19 +166,13 @@ body {
 }
 
 .visibility--768-1366 {
-  position: absolute;
-  left: -300vw;
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
 
   .visibility--320-768 {
-    position: absolute;
-    left: -300vw;
-    width: 0;
-    height: 0;
+    display: none;
   }
 
   .main-info {
@@ -197,9 +204,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1365px) {
 
   .visibility--768-1366 {
-    position: static;
-    width: auto;
-    height: auto;
+    display: block;
   }
 
   .upper-menu__divider {
@@ -209,6 +214,10 @@ body {
 
   .upper-menu {
     justify-content: space-between;
+  }
+
+  .upper-menu__part__round-button--r {
+    margin-right: 26px;
   }
 
   .round-button--icon--call {
@@ -223,6 +232,22 @@ body {
     background-image: url('../img/interface/profile-icon.svg');
   }
 
+  .round-button--icon--profile::after {
+    position: relative;
+    left: 60px;
+    display: block;
+    content: "";
+    width: 2px;
+    height: 32px;
+    background-image: url('../img/decoration/divider.svg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+  .round-button--icon--burger::after {
+    left: 60px;
+  }
+
   .page-nav {
     padding: 32px 0 32px 24px;
   }
@@ -230,25 +255,25 @@ body {
 }
 
 .visibility--1366-max {
-  position: absolute;
-  left: -300vw;
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 @media (min-width: 1366px) {
 
+  .visibility--320-1365 {
+    display: none;
+  }
+
   .visibility--320-768 {
-    position: absolute;
-    left: -300vw;
-    width: 0;
-    height: 0;
+    display: none;
+  }
+
+  .visibility--320-max {
+    display: block;
   }
 
   .visibility--1366-max {
-    position: static;
-    width: auto;
-    height: auto;
+    display: block;
   }
 
   .page-nav__list {
