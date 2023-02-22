@@ -1,0 +1,79 @@
+@keyframes btn-shadow-in {
+  from {
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  to {
+    box-shadow: 0 0 10px 2px #fa6995;
+  }
+}
+
+@keyframes btn-shadow-out {
+  from {
+    box-shadow: 0 0 10px 2px #fa6995;
+  }
+
+  to {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.1;
+  }
+}
+
+@keyframes scale-out {
+  from {
+    scale: 1.1;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes txt-color-000-in {
+  from {
+    color: #7E7E82;
+  }
+
+  to {
+    color: #000;
+  }
+}
+
+@keyframes txt-color-000-out {
+  from {
+    color: #000;
+  }
+
+  to {
+    color: #7E7E82;
+  }
+}
+
+@keyframes txt-color-7E7E82-in {
+  from {
+    color: #000;
+  }
+
+  to {
+    color: #7E7E82;
+  }
+}
+
+@keyframes txt-color-7E7E82-out {
+  from {
+    color: #7E7E82;
+  }
+
+  to {
+    color: #000;
+  }
+}

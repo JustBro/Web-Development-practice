@@ -1,0 +1,20 @@
+.communication {
+  display: flex;
+  gap: 16px;
+}
+
+.head .communication {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+
+  .head .communication {
+    display: flex;
+  }
+
+  .head__communication {
+    margin-left: auto;
+  }
+
+}

@@ -1,0 +1,30 @@
+.expunder {
+  font-family: 'TTLakes medium';
+  font-size: 16px;
+  align-self: flex-start;
+  background-color: #F8F8F8;
+  background-image: url(../img/expander.svg);
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  padding-left: 32px;
+  height: 24px;
+  animation-name: scale-out;
+  animation-duration: 0.3s;
+}
+
+.expunder:hover {
+  animation-name: scale-in;
+  animation-duration: 0.3s;
+  scale: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .expunder {
+    margin-top: 10px;
+  }
+
+  .about__expunder {
+    margin-top: -17px;
+  }
+}

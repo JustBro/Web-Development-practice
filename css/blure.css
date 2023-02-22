@@ -1,0 +1,9 @@
+.blure {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: calc(100vw - 320px);
+  background-image: linear-gradient(90deg, #e4e4e4  1%, #fff 4%);
+  opacity: 96%;
+}
