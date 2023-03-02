@@ -1,16 +1,14 @@
 .phone {
+  display: inline-block;
   font-family: 'TTLakes bold';
   font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.phone a {
+  font-style: normal;
   animation-name: txt-color-7E7E82-out;
   animation-duration: 0.3s;
 }
 
-.phone:hover a {
+.phone:hover {
   animation-name: txt-color-7E7E82-in;
   animation-duration: 0.3s;
-  color: #7E7E82;
+  animation-fill-mode: forwards;
 }

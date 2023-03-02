@@ -1,0 +1,119 @@
+.brands {
+  overflow: hidden;
+}
+
+.brands__title {
+  display: inline-block;
+  font-family: 'TTLakes regular';
+  font-size: 16px;
+  line-height: 24px;
+  color: #7E7E82;
+  padding: 16px 0 16px 16px;
+}
+
+.brands__list {
+  display: flex;
+  gap: 16px;
+  overflow-x: scroll;
+  padding: 16px 0 16px 16px;
+}
+
+.brands__elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 72px;
+  width: 240px;
+  padding: 16px;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+.brands__elem::after {
+  right: 16px;
+  top: 16px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #FF3E79;
+  background-image: url(../img/arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.brands__elem--pic--apple {
+  padding-top: 12px;
+}
+
+.brands__elem--pic--acer {
+  padding: 24px 16px;
+}
+
+.brands__elem--pic--sony {
+  padding: 23px 16px;
+}
+
+.brands__expunder {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .brands__title {
+    padding: 16px 0 16px 24px;
+  }
+
+  .brands__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    height: 216px;
+    padding: 24px;
+    overflow: hidden;
+    transition: height .5s;
+  }
+
+  .brands__list--expund {
+    height: 408px;
+  }
+
+  .brands__elem {
+    width: 224px;
+  }
+
+  .brands__expunder {
+    display: inline-block;
+    margin-left: 24px;
+    margin-bottom: 32px;
+  }
+
+}
+
+@media (min-width: 1016px) {
+  .brands__list--expund {
+    height: 312px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .brands__title {
+    padding: 16px 0 16px 32px;
+  }
+
+  .brands__list {
+    column-gap: 32px;
+    padding: 24px 32px;
+  }
+
+  .brands__elem {
+    width: 240px;
+  }
+
+  .brands__expunder {
+    margin-left: 32px;
+    margin-bottom: 50px;
+  }
+}

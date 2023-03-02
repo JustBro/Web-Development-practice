@@ -5,15 +5,15 @@
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  animation-name: btn-shadow-out, scale-out;
+  animation-name: btn-shadow-out;
   animation-duration: 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
-  animation-name: btn-shadow-in, scale-in;
+  animation-name: btn-shadow-in;
   animation-duration: 0.3s;
-  box-shadow: 0 0 10px 2px #fa6995;
-  scale: 1.1;
+  animation-fill-mode: forwards;
 }
 
 .btn--pic--burger {
@@ -72,7 +72,7 @@
   top: 24px;
 }
 
-.btn--pic--close::after {
+.btn--close::after {
   display: block;
   content: "";
   position: relative;
@@ -85,7 +85,7 @@
   border-radius: 2px;
 }
 
-.btn--pic--close::before {
+.btn--close::before {
   display: block;
   content: "";
   position: relative;
@@ -106,7 +106,7 @@
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
 
   .btn--pic--burger::after {
     left: 60px;
@@ -133,7 +133,7 @@
 
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1440px) {
 
   .btn-wrap .btn {
     animation-name: btn-shadow-out;
@@ -143,7 +143,7 @@
   .btn-wrap:hover .btn {
     animation-name: btn-shadow-in;
     animation-duration: 0.3s;
-    box-shadow: 0 0 10px 2px #fa6995;
+    animation-fill-mode: forwards;
   }
 
   .btn__txt {
@@ -156,28 +156,19 @@
     position: static;
   }
 
-  .btn--pic--repair {
+  .btn--pic--repair,
+  .btn--pic--repair:hover,
+  .btn--pic--status,
+  .btn--pic--status:hover {
     animation: none;
-  }
-
-  .btn--pic--repair:hover {
-    animation: none;
-    box-shadow: 0 0 0 0 #fff;
-    scale: 1;
   }
 
   .head__btn--pic--status {
     position: static;
   }
 
-  .btn--pic--status {
-    animation: none;
-  }
-
-  .btn--pic--status:hover {
-    box-shadow: 0 0 0 0 #fff;
-    scale: 1;
-    animation: none;
+  .btn--close {
+    display: none;
   }
 
 }

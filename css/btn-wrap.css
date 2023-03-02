@@ -1,17 +1,10 @@
-@media (min-width: 1366px) {
+@media (min-width: 1440px) {
 
   .btn-wrap {
-    animation-name: scale-out;
-    animation-duration: 0.3s;
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-
-  .btn-wrap:hover {
-    animation-name: scale-in;
-    animation-duration: 0.3s;
-    scale: 1.1;
+    cursor: pointer;
   }
 
   .title-btn-wrap__btn-wrap {

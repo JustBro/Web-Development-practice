@@ -1,16 +1,16 @@
-.cite-nav {
+.site-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
-.cite-nav__li {
+.site-nav__li {
   display: flex;
   flex-basis: 100%;
   list-style-type: none;
 }
 
-.cite-nav__link {
+.site-nav__link {
   flex-basis: 100%;
   line-height: 32px;
   font-family: 'TTLakes medium';
@@ -20,23 +20,23 @@
   animation-duration: 0.3s;
 }
 
-.cite-nav__link:hover {
+.site-nav__link:hover {
   animation-name: scale-in;
   animation-duration: 0.3s;
   scale: 1.1;
 }
 
-.cite-nav__link--active {
+.site-nav__link--active {
   color: #7E7E82;
   animation: none;
 }
 
-.cite-nav__link--active:hover {
+.site-nav__link--active:hover {
   animation: none;
   scale: none;
 }
 
-.cite-nav__link--active::before {
+.site-nav__link--active::before {
   position: absolute;
   left: 0;
   display: inline-block;

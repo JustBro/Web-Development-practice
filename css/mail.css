@@ -1,16 +1,14 @@
 .mail {
+  display: inline-block;
   font-family: 'TTLakes medium';
   font-size: 16px;
-  margin: 16px 0 12px 0;
-}
-
-.mail a {
+  font-style: normal;
   animation-name: txt-color-7E7E82-out;
   animation-duration: 0.3s;
 }
 
-.mail:hover a {
+.mail:hover {
   animation-name: txt-color-7E7E82-in;
   animation-duration: 0.3s;
-  color: #7E7E82;
+  animation-fill-mode: forwards;
 }

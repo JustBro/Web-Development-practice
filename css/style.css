@@ -12,10 +12,14 @@
 @import url('./about.css');
 @import url('./expunder.css');
 @import url('./menu.css');
-@import url('./menu-head.css');
-@import url('./cite-nav.css');
-@import url('./footer.css');
+@import url('./site-nav.css');
 @import url('./mail.css');
 @import url('./phone.css');
 @import url('./lang.css');
 @import url('./blure.css');
+@import url('./brands.css');
+/* @import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'); */
+
+.swiper-slide {
+  width: auto;
+}

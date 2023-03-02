@@ -9,12 +9,13 @@
   animation-name: scale-out;
   animation-duration: 0.3s;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .lang__btn:hover {
   animation-name: scale-in;
   animation-duration: 0.3s;
-  scale: 1.1;
+  animation-fill-mode: forwards;
 }
 
 .lang__btn--active {
@@ -24,5 +25,4 @@
 
 .lang__btn--active:hover {
   animation: none;
-  scale: none;
 }

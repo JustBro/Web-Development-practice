@@ -3,5 +3,11 @@
   max-width: 1120px;
   font-size: 0;
   margin: 0 auto;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
+
+/* @media (min-width: 1440px) {
+  .content-wrap {
+    margin-right: calc((100vw - 320px - 1120px) / 2);
+  }
+} */
