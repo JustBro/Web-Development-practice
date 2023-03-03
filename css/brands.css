@@ -1,5 +1,6 @@
 .brands {
   overflow: hidden;
+  padding-bottom: 52px;
 }
 
 .brands__title {
@@ -13,9 +14,7 @@
 
 .brands__list {
   display: flex;
-  gap: 16px;
-  overflow-x: scroll;
-  padding: 16px 0 16px 16px;
+  padding-left: 16px;
 }
 
 .brands__elem {
@@ -23,7 +22,6 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 72px;
   width: 240px;
   padding: 16px;
   vertical-align: middle;
@@ -41,18 +39,6 @@
   background-image: url(../img/arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.brands__elem--pic--apple {
-  padding-top: 12px;
-}
-
-.brands__elem--pic--acer {
-  padding: 24px 16px;
-}
-
-.brands__elem--pic--sony {
-  padding: 23px 16px;
 }
 
 .brands__expunder {
@@ -81,6 +67,7 @@
 
   .brands__elem {
     width: 224px;
+    height: 72px;
   }
 
   .brands__expunder {

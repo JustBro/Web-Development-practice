@@ -18,8 +18,24 @@
 @import url('./lang.css');
 @import url('./blure.css');
 @import url('./brands.css');
-/* @import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'); */
 
 .swiper-slide {
   width: auto;
+  height: 72px;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: #DDDDDD;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #B5B6BC;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 20px;
 }

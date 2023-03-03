@@ -6,8 +6,8 @@
   background-color: #f8f8f8;
 }
 
-/* @media (min-width: 1440px) {
+@media (min-width: 1440px) {
   .content-wrap {
     margin-right: calc((100vw - 320px - 1120px) / 2);
   }
-} */
+}
