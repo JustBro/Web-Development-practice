@@ -1,8 +1,8 @@
+const brands = document.querySelector('.brands');
+const brandsExp = document.querySelector('.brands__expunder');
+const brandsList = document.querySelector('.brands__list');
+const brandsElems = document.querySelectorAll('.brands__elem');
 let screenWidth = document.documentElement.clientWidth;
-let brands = document.querySelector('.brands');
-let brandsExp = document.querySelector('.brands__expunder');
-let brandsList = document.querySelector('.brands__list');
-let brandsElems = document.querySelectorAll('.brands__elem');
 let brandsExpDeploy = false;
 let swiper = undefined;
 
